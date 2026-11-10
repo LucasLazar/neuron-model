@@ -1,0 +1,24 @@
+p0: J_max retune for the per-synapse reading
+==============================================================================
+  target: one event from rest raises free calcium by 0.5 uM at Btot 44 uM (kappa 20.0), dt 0.1 ms, u_quadrature=exact
+  J_max = 78.297 uM/ms   (156.6 x untuned 0.5)
+  same J_max at dt 0.0125: peak 0.4982 uM (-0.4% vs target)
+  same J_max with the historical frozen u^2 step at dt 0.1: peak 0.5562 uM (+11.2%)
+  calcium entering per event: 12.51 uM total = 754 ions in a 0.1 fL spine head
+  unchanged by the retune: V peak -61.3 mV, s peak 0.138, Mg unblock 0.0227 at rest -> 0.0384 at V peak
+
+  SINGLE EVENT from rest, per buffer
+    Btot  kappa | untuned (0.5) peak   retuned peak  ratio | t-peak  half-width | occupancy rest -> peak
+       0    0.0 |         0.0169 uM     2.6461 uM  156.6 |  16.3 ms    45.7 ms | --
+      15    6.8 |         0.0056 uM     1.1152 uM  200.5 |  42.4 ms   110.8 ms | 0.048 -> 0.378
+      44   20.0 |         0.0027 uM     0.5000 uM  184.1 |  73.0 ms   232.2 ms | 0.048 -> 0.231
+     100   45.4 |         0.0014 uM     0.2424 uM  171.9 | 101.5 ms   457.4 ms | 0.048 -> 0.146
+     300  136.1 |         0.0005 uM     0.0864 uM  162.5 | 140.6 ms  1242.5 ms | 0.048 -> 0.085
+
+  PAIRS: second event after the interval; ratio to one event (peak) or to two isolated events (integral)
+    Btot   0: 2ms 2.55/1.10  5ms 2.48/1.09  10ms 2.29/1.06  20ms 1.96/1.03  50ms 1.41/1.01  100ms 1.11/1.00  200ms 1.01/1.00  500ms 1.00/1.00
+    Btot  44: 2ms 2.78/1.10  5ms 2.74/1.09  10ms 2.63/1.06  20ms 2.50/1.03  50ms 2.32/1.01  100ms 2.05/1.00  200ms 1.63/1.00  500ms 1.16/1.00
+    Btot 300: 2ms 2.31/1.11  5ms 2.29/1.10  10ms 2.22/1.07  20ms 2.15/1.04  50ms 2.09/1.02  100ms 2.05/1.01  200ms 1.98/1.02  500ms 1.81/1.03
+    (peak ratio 2 = linear summation of peaks; integral ratio 1 = linear influx)
+
+saved /Users/more/Documents/Neuron model/handover/physio/plots/fig_p0_retune.png

@@ -1,0 +1,152 @@
+[
+ {
+  "rate": 1.0,
+  "sigma": 0.0,
+  "mean_occupancy_per_synapse": 0.005751454810901054,
+  "linear": {
+   "mean_ratio": 1.0051987671240272,
+   "rms_relative": 0.007978172414166328,
+   "corr": 0.9997644947634622
+  },
+  "meanfield": {
+   "mean_ratio": 0.9990414869901889,
+   "rms_relative": 0.005644498556703971,
+   "corr": 0.9997693350092496
+  }
+ },
+ {
+  "rate": 2.5,
+  "sigma": 0.0,
+  "mean_occupancy_per_synapse": 0.01448299074277415,
+  "linear": {
+   "mean_ratio": 1.013491901315326,
+   "rms_relative": 0.014952918325696181,
+   "corr": 0.9992687734749885
+  },
+  "meanfield": {
+   "mean_ratio": 0.9985046912180628,
+   "rms_relative": 0.005927596172062494,
+   "corr": 0.9993020415342743
+  }
+ },
+ {
+  "rate": 5.0,
+  "sigma": 0.0,
+  "mean_occupancy_per_synapse": 0.028307869397403942,
+  "linear": {
+   "mean_ratio": 1.0300929371227592,
+   "rms_relative": 0.03126140011567503,
+   "corr": 0.9983686233300669
+  },
+  "meanfield": {
+   "mean_ratio": 1.0005433770276009,
+   "rms_relative": 0.006545514835852121,
+   "corr": 0.9984457652442015
+  }
+ },
+ {
+  "rate": 10.0,
+  "sigma": 0.0,
+  "mean_occupancy_per_synapse": 0.05457470124953355,
+  "linear": {
+   "mean_ratio": 1.0602303870649925,
+   "rms_relative": 0.061061845337269806,
+   "corr": 0.9969495182195705
+  },
+  "meanfield": {
+   "mean_ratio": 1.0018842382402835,
+   "rms_relative": 0.006426267207537871,
+   "corr": 0.9973035752599306
+  }
+ },
+ {
+  "rate": 20.0,
+  "sigma": 0.0,
+  "mean_occupancy_per_synapse": 0.10408895921090494,
+  "linear": {
+   "mean_ratio": 1.1231595781129449,
+   "rms_relative": 0.12389200230347128,
+   "corr": 0.9935152887649362
+  },
+  "meanfield": {
+   "mean_ratio": 1.0052814594053978,
+   "rms_relative": 0.007759993848073366,
+   "corr": 0.9954947829043843
+  }
+ },
+ {
+  "rate": 1.0,
+  "sigma": 0.5,
+  "mean_occupancy_per_synapse": 0.005768927355589683,
+  "linear": {
+   "mean_ratio": 1.0056959510207197,
+   "rms_relative": 0.009237162883127717,
+   "corr": 0.999862271848909
+  },
+  "meanfield": {
+   "mean_ratio": 0.9990316933545945,
+   "rms_relative": 0.006517104231471217,
+   "corr": 0.9998643273810368
+  }
+ },
+ {
+  "rate": 2.5,
+  "sigma": 0.5,
+  "mean_occupancy_per_synapse": 0.014081069425474992,
+  "linear": {
+   "mean_ratio": 1.015248428839494,
+   "rms_relative": 0.018686837800326473,
+   "corr": 0.9997136357575498
+  },
+  "meanfield": {
+   "mean_ratio": 0.9995644205166141,
+   "rms_relative": 0.006749288015720217,
+   "corr": 0.9997671730102448
+  }
+ },
+ {
+  "rate": 5.0,
+  "sigma": 0.5,
+  "mean_occupancy_per_synapse": 0.02847164986349038,
+  "linear": {
+   "mean_ratio": 1.0327670794788943,
+   "rms_relative": 0.03700283181156672,
+   "corr": 0.9996026242624513
+  },
+  "meanfield": {
+   "mean_ratio": 1.0008263429606767,
+   "rms_relative": 0.0067246961316784004,
+   "corr": 0.9997358260963272
+  }
+ },
+ {
+  "rate": 10.0,
+  "sigma": 0.5,
+  "mean_occupancy_per_synapse": 0.05441393537764008,
+  "linear": {
+   "mean_ratio": 1.0658283603047285,
+   "rms_relative": 0.0737914442471154,
+   "corr": 0.9991800815483469
+  },
+  "meanfield": {
+   "mean_ratio": 1.0025071011820568,
+   "rms_relative": 0.007052211141504176,
+   "corr": 0.9997622136145258
+  }
+ },
+ {
+  "rate": 20.0,
+  "sigma": 0.5,
+  "mean_occupancy_per_synapse": 0.10602973242960259,
+  "linear": {
+   "mean_ratio": 1.13810278811704,
+   "rms_relative": 0.15147678773310466,
+   "corr": 0.9978502239761432
+  },
+  "meanfield": {
+   "mean_ratio": 1.007102901328214,
+   "rms_relative": 0.00981660077253201,
+   "corr": 0.9997232678646867
+  }
+ }
+]

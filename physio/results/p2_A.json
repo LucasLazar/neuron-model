@@ -1,0 +1,486 @@
+[
+ {
+  "case": "isolated events, 2 Hz, Btot 44",
+  "rate_hz": 2,
+  "buffer": 44.0,
+  "duration_ms": 4000.0,
+  "events": 8,
+  "reference_spikes": 0,
+  "reference_seconds": 19.61662574,
+  "mean_excess": 0.29877394320710104,
+  "peak_excess": 1.197656984564686,
+  "levels": [
+   {
+    "dt": 0.2,
+    "scheme": "exact",
+    "max_abs_error": 0.02023030903408518,
+    "max_error_over_range": 0.016891571873092124,
+    "mean_excess_error": 0.007546359235584436,
+    "peak_error": 0.011942502499261279,
+    "spikes": 0
+   },
+   {
+    "dt": 0.1,
+    "scheme": "exact",
+    "max_abs_error": 0.009488665407816788,
+    "max_error_over_range": 0.007922690327953662,
+    "mean_excess_error": 0.003724508213426182,
+    "peak_error": 0.006125627373346822,
+    "spikes": 0
+   },
+   {
+    "dt": 0.05,
+    "scheme": "exact",
+    "max_abs_error": 0.0046614718252449006,
+    "max_error_over_range": 0.003892159345556868,
+    "mean_excess_error": 0.0018504667093814996,
+    "peak_error": 0.0031011822742759484,
+    "spikes": 0
+   },
+   {
+    "dt": 0.025,
+    "scheme": "exact",
+    "max_abs_error": 0.0023151824931515463,
+    "max_error_over_range": 0.0019330931335010322,
+    "mean_excess_error": 0.0009223278987499085,
+    "peak_error": 0.0015633954948650033,
+    "spikes": 0
+   },
+   {
+    "dt": 0.0125,
+    "scheme": "exact",
+    "max_abs_error": 0.0011541399314711764,
+    "max_error_over_range": 0.0009636648442297301,
+    "mean_excess_error": 0.00046044236105211055,
+    "peak_error": 0.0007849106023270212,
+    "spikes": 0
+   },
+   {
+    "dt": 0.00625,
+    "scheme": "exact",
+    "max_abs_error": 0.0005763103512108625,
+    "max_error_over_range": 0.0004811981716286945,
+    "mean_excess_error": 0.00023004135637572852,
+    "peak_error": 0.000393258614747812,
+    "spikes": 0
+   },
+   {
+    "dt": 0.2,
+    "scheme": "frozen",
+    "max_abs_error": 0.3470874954189951,
+    "max_error_over_range": 0.28980542834236583,
+    "mean_excess_error": 0.20127244090026097,
+    "peak_error": 0.28547160187634296,
+    "spikes": 0
+   },
+   {
+    "dt": 0.1,
+    "scheme": "frozen",
+    "max_abs_error": 0.16410073085939558,
+    "max_error_over_range": 0.137018138727794,
+    "mean_excess_error": 0.09808628069434291,
+    "peak_error": 0.13518399250473687,
+    "spikes": 0
+   },
+   {
+    "dt": 0.05,
+    "scheme": "frozen",
+    "max_abs_error": 0.07978385911071939,
+    "max_error_over_range": 0.06661661906453001,
+    "mean_excess_error": 0.04838992709828474,
+    "peak_error": 0.06577777744898308,
+    "spikes": 0
+   },
+   {
+    "dt": 0.025,
+    "scheme": "frozen",
+    "max_abs_error": 0.039334860392482796,
+    "max_error_over_range": 0.032843177052718386,
+    "mean_excess_error": 0.024029876673749548,
+    "peak_error": 0.03243598959051694,
+    "spikes": 0
+   },
+   {
+    "dt": 0.0125,
+    "scheme": "frozen",
+    "max_abs_error": 0.019530052129733244,
+    "max_error_over_range": 0.0163068828399409,
+    "mean_excess_error": 0.011973455585288893,
+    "peak_error": 0.01608963230184742,
+    "spikes": 0
+   },
+   {
+    "dt": 0.00625,
+    "scheme": "frozen",
+    "max_abs_error": 0.00973092521930341,
+    "max_error_over_range": 0.00812496845483711,
+    "mean_excess_error": 0.005976331485669005,
+    "peak_error": 0.00801859512213046,
+    "spikes": 0
+   }
+  ]
+ },
+ {
+  "case": "8 Hz, Btot 15 (buffer saturates)",
+  "rate_hz": 8,
+  "buffer": 15.0,
+  "duration_ms": 3000.0,
+  "events": 35,
+  "reference_spikes": 0,
+  "reference_seconds": 31.191079251,
+  "mean_excess": 1.8108853606147888,
+  "peak_excess": 13.263691891305516,
+  "levels": [
+   {
+    "dt": 0.2,
+    "scheme": "exact",
+    "max_abs_error": 0.45176459839168714,
+    "max_error_over_range": 0.03406024522386738,
+    "mean_excess_error": 0.011625309605048864,
+    "peak_error": 0.028222848455177092,
+    "spikes": 0
+   },
+   {
+    "dt": 0.1,
+    "scheme": "exact",
+    "max_abs_error": 0.22318929762538708,
+    "max_error_over_range": 0.016827087017279852,
+    "mean_excess_error": 0.005739690802719238,
+    "peak_error": 0.01398217618031999,
+    "spikes": 0
+   },
+   {
+    "dt": 0.05,
+    "scheme": "exact",
+    "max_abs_error": 0.11093005243910525,
+    "max_error_over_range": 0.008363437069268852,
+    "mean_excess_error": 0.0028519986776001354,
+    "peak_error": 0.006959315753294229,
+    "spikes": 0
+   },
+   {
+    "dt": 0.025,
+    "scheme": "exact",
+    "max_abs_error": 0.05529991501723508,
+    "max_error_over_range": 0.004169270175333666,
+    "mean_excess_error": 0.0014215868428173741,
+    "peak_error": 0.0034717792022474834,
+    "spikes": 0
+   },
+   {
+    "dt": 0.0125,
+    "scheme": "exact",
+    "max_abs_error": 0.027608806620456505,
+    "max_error_over_range": 0.0020815325662498505,
+    "mean_excess_error": 0.0007096964417426756,
+    "peak_error": 0.001733927789336158,
+    "spikes": 0
+   },
+   {
+    "dt": 0.00625,
+    "scheme": "exact",
+    "max_abs_error": 0.013794131274149635,
+    "max_error_over_range": 0.0010399918353947762,
+    "mean_excess_error": 0.0003545747435054728,
+    "peak_error": 0.0008664744116307139,
+    "spikes": 0
+   },
+   {
+    "dt": 0.2,
+    "scheme": "frozen",
+    "max_abs_error": 2.8612984822182526,
+    "max_error_over_range": 0.21572413666317616,
+    "mean_excess_error": 0.19219366888897382,
+    "peak_error": 0.21049280299772646,
+    "spikes": 0
+   },
+   {
+    "dt": 0.1,
+    "scheme": "frozen",
+    "max_abs_error": 1.4089878564390954,
+    "max_error_over_range": 0.10622893444642673,
+    "mean_excess_error": 0.0940832082071395,
+    "peak_error": 0.10405564155602982,
+    "spikes": 0
+   },
+   {
+    "dt": 0.05,
+    "scheme": "frozen",
+    "max_abs_error": 0.6994993654982906,
+    "max_error_over_range": 0.05273790821067093,
+    "mean_excess_error": 0.04651603443759064,
+    "peak_error": 0.05169635700330273,
+    "spikes": 0
+   },
+   {
+    "dt": 0.025,
+    "scheme": "frozen",
+    "max_abs_error": 0.34844159323185053,
+    "max_error_over_range": 0.026270332279073636,
+    "mean_excess_error": 0.02312400259561188,
+    "peak_error": 0.025761022782636055,
+    "spikes": 0
+   },
+   {
+    "dt": 0.0125,
+    "scheme": "frozen",
+    "max_abs_error": 0.1738862491405193,
+    "max_error_over_range": 0.013109943337458215,
+    "mean_excess_error": 0.011528179934269933,
+    "peak_error": 0.012858181674931236,
+    "spikes": 0
+   },
+   {
+    "dt": 0.00625,
+    "scheme": "frozen",
+    "max_abs_error": 0.0868585408711926,
+    "max_error_over_range": 0.006548594583091097,
+    "mean_excess_error": 0.005755595565591234,
+    "peak_error": 0.0064234405093946045,
+    "spikes": 0
+   }
+  ]
+ },
+ {
+  "case": "32 Hz, no buffer",
+  "rate_hz": 32,
+  "buffer": 0.0,
+  "duration_ms": 2000.0,
+  "events": 64,
+  "reference_spikes": 0,
+  "reference_seconds": 35.708048113000004,
+  "mean_excess": 5.171437029339862,
+  "peak_excess": 19.681356911132408,
+  "levels": [
+   {
+    "dt": 0.2,
+    "scheme": "exact",
+    "max_abs_error": 0.6351829553986761,
+    "max_error_over_range": 0.03227333147133754,
+    "mean_excess_error": 0.015540185082782062,
+    "peak_error": 0.029609404493520584,
+    "spikes": 0
+   },
+   {
+    "dt": 0.1,
+    "scheme": "exact",
+    "max_abs_error": 0.31466945664423207,
+    "max_error_over_range": 0.015988199292613046,
+    "mean_excess_error": 0.007675467272876329,
+    "peak_error": 0.014669771610178808,
+    "spikes": 0
+   },
+   {
+    "dt": 0.05,
+    "scheme": "exact",
+    "max_abs_error": 0.15661578727924308,
+    "max_error_over_range": 0.007957570607881012,
+    "mean_excess_error": 0.003814578290167598,
+    "peak_error": 0.007301570093644372,
+    "spikes": 0
+   },
+   {
+    "dt": 0.025,
+    "scheme": "exact",
+    "max_abs_error": 0.07812956520292502,
+    "max_error_over_range": 0.0039697245243661234,
+    "mean_excess_error": 0.0019015621198652125,
+    "peak_error": 0.003642507603562271,
+    "spikes": 0
+   },
+   {
+    "dt": 0.0125,
+    "scheme": "exact",
+    "max_abs_error": 0.039020373765605854,
+    "max_error_over_range": 0.001982605871220936,
+    "mean_excess_error": 0.0009493569752838143,
+    "peak_error": 0.001819190830160544,
+    "spikes": 0
+   },
+   {
+    "dt": 0.00625,
+    "scheme": "exact",
+    "max_abs_error": 0.019499106167497615,
+    "max_error_over_range": 0.0009907399299521008,
+    "mean_excess_error": 0.0004743234218491285,
+    "peak_error": 0.0009090804677271675,
+    "spikes": 0
+   },
+   {
+    "dt": 0.2,
+    "scheme": "frozen",
+    "max_abs_error": 3.5638246522403847,
+    "max_error_over_range": 0.18107616605563262,
+    "mean_excess_error": 0.17844687074364693,
+    "peak_error": 0.17953938970964234,
+    "spikes": 0
+   },
+   {
+    "dt": 0.1,
+    "scheme": "frozen",
+    "max_abs_error": 1.755992663731309,
+    "max_error_over_range": 0.08922111781520832,
+    "mean_excess_error": 0.08782334869885866,
+    "peak_error": 0.08857681207361576,
+    "spikes": 0
+   },
+   {
+    "dt": 0.05,
+    "scheme": "frozen",
+    "max_abs_error": 0.8711215020064422,
+    "max_error_over_range": 0.04426125220633075,
+    "mean_excess_error": 0.0435359798881905,
+    "peak_error": 0.04395813671577292,
+    "spikes": 0
+   },
+   {
+    "dt": 0.025,
+    "scheme": "frozen",
+    "max_abs_error": 0.43376565351550056,
+    "max_error_over_range": 0.022039418088604896,
+    "mean_excess_error": 0.0216709339795338,
+    "peak_error": 0.021892559766746495,
+    "spikes": 0
+   },
+   {
+    "dt": 0.0125,
+    "scheme": "frozen",
+    "max_abs_error": 0.21642462120081163,
+    "max_error_over_range": 0.010996427846821625,
+    "mean_excess_error": 0.01081081727885091,
+    "peak_error": 0.010924165563365907,
+    "spikes": 0
+   },
+   {
+    "dt": 0.00625,
+    "scheme": "frozen",
+    "max_abs_error": 0.10809658852297233,
+    "max_error_over_range": 0.005492334141952856,
+    "mean_excess_error": 0.005399198392269615,
+    "peak_error": 0.00545649369229651,
+    "spikes": 0
+   }
+  ]
+ },
+ {
+  "case": "32 Hz, Btot 300",
+  "rate_hz": 32,
+  "buffer": 300.0,
+  "duration_ms": 2000.0,
+  "events": 60,
+  "reference_spikes": 0,
+  "reference_seconds": 28.963916853,
+  "mean_excess": 3.7499221780584002,
+  "peak_excess": 6.025336999061977,
+  "levels": [
+   {
+    "dt": 0.2,
+    "scheme": "exact",
+    "max_abs_error": 0.1271528702027913,
+    "max_error_over_range": 0.021103030456651045,
+    "mean_excess_error": 0.01783407849999582,
+    "peak_error": 0.017612708268970496,
+    "spikes": 0
+   },
+   {
+    "dt": 0.1,
+    "scheme": "exact",
+    "max_abs_error": 0.05830138864509404,
+    "max_error_over_range": 0.009676037814012791,
+    "mean_excess_error": 0.008818997446030409,
+    "peak_error": 0.008735472237707403,
+    "spikes": 0
+   },
+   {
+    "dt": 0.05,
+    "scheme": "exact",
+    "max_abs_error": 0.028564142775137746,
+    "max_error_over_range": 0.0047406713980619845,
+    "mean_excess_error": 0.004387304254516945,
+    "peak_error": 0.004354191299171645,
+    "spikes": 0
+   },
+   {
+    "dt": 0.025,
+    "scheme": "exact",
+    "max_abs_error": 0.014186526306673386,
+    "max_error_over_range": 0.002354478481267013,
+    "mean_excess_error": 0.0021883354769226897,
+    "peak_error": 0.002174055992437046,
+    "spikes": 0
+   },
+   {
+    "dt": 0.0125,
+    "scheme": "exact",
+    "max_abs_error": 0.007075879029814658,
+    "max_error_over_range": 0.001174354070306147,
+    "mean_excess_error": 0.0010928575947705245,
+    "peak_error": 0.0010862859963577532,
+    "spikes": 0
+   },
+   {
+    "dt": 0.00625,
+    "scheme": "exact",
+    "max_abs_error": 0.0035346278782117935,
+    "max_error_over_range": 0.0005866274166510625,
+    "mean_excess_error": 0.0005461029079251116,
+    "peak_error": 0.0005429576896576474,
+    "spikes": 0
+   },
+   {
+    "dt": 0.2,
+    "scheme": "frozen",
+    "max_abs_error": 1.3582096214845194,
+    "max_error_over_range": 0.2254163745025324,
+    "mean_excess_error": 0.22234217173252832,
+    "peak_error": 0.2123826451080095,
+    "spikes": 0
+   },
+   {
+    "dt": 0.1,
+    "scheme": "frozen",
+    "max_abs_error": 0.6570663940064492,
+    "max_error_over_range": 0.10905056333093752,
+    "mean_excess_error": 0.10898433703762876,
+    "peak_error": 0.10389991618882927,
+    "spikes": 0
+   },
+   {
+    "dt": 0.05,
+    "scheme": "frozen",
+    "max_abs_error": 0.3230603438634869,
+    "max_error_over_range": 0.05361697510260104,
+    "mean_excess_error": 0.05390909330555716,
+    "peak_error": 0.05135971595779077,
+    "spikes": 0
+   },
+   {
+    "dt": 0.025,
+    "scheme": "frozen",
+    "max_abs_error": 0.16018526916488263,
+    "max_error_over_range": 0.026585279659846448,
+    "mean_excess_error": 0.026804251097673332,
+    "peak_error": 0.025529408247916077,
+    "spikes": 0
+   },
+   {
+    "dt": 0.0125,
+    "scheme": "frozen",
+    "max_abs_error": 0.07975721852429096,
+    "max_error_over_range": 0.013236972228558758,
+    "mean_excess_error": 0.01336398208859935,
+    "peak_error": 0.012726747109615454,
+    "spikes": 0
+   },
+   {
+    "dt": 0.00625,
+    "scheme": "frozen",
+    "max_abs_error": 0.03979480387044809,
+    "max_error_over_range": 0.0066045772836678404,
+    "mean_excess_error": 0.006672383646084733,
+    "peak_error": 0.006353841974515869,
+    "spikes": 0
+   }
+  ]
+ }
+]

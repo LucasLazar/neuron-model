@@ -1,0 +1,19 @@
+b0: pooled gate vs K = 200 explicit nonlinear synapses, 20 s each
+==============================================================================
+                              |     linear gate: pooled/explicit   | mean-field gate (production)
+ OU sigma  rate/syn | s per syn |   mean ratio  rms diff/mean  corr |   mean ratio  rms diff/mean  corr
+     0.0      1.0 Hz |    0.0058 |       1.0052         0.0080 0.9998 |       0.9990         0.0056 0.9998
+     0.0      2.5 Hz |    0.0145 |       1.0135         0.0150 0.9993 |       0.9985         0.0059 0.9993
+     0.0      5.0 Hz |    0.0283 |       1.0301         0.0313 0.9984 |       1.0005         0.0065 0.9984
+     0.0     10.0 Hz |    0.0546 |       1.0602         0.0611 0.9969 |       1.0019         0.0064 0.9973
+     0.0     20.0 Hz |    0.1041 |       1.1232         0.1239 0.9935 |       1.0053         0.0078 0.9955
+     0.5      1.0 Hz |    0.0058 |       1.0057         0.0092 0.9999 |       0.9990         0.0065 0.9999
+     0.5      2.5 Hz |    0.0141 |       1.0152         0.0187 0.9997 |       0.9996         0.0067 0.9998
+     0.5      5.0 Hz |    0.0285 |       1.0328         0.0370 0.9996 |       1.0008         0.0067 0.9997
+     0.5     10.0 Hz |    0.0544 |       1.0658         0.0738 0.9992 |       1.0025         0.0071 0.9998
+     0.5     20.0 Hz |    0.1060 |       1.1381         0.1515 0.9979 |       1.0071         0.0098 0.9997
+
+ linear: each event adds an isolated-synapse response; overestimates because it omits a
+ synapse's own earlier occupancy. mean-field: (1 - s/K), the occupancy a Poisson synapse
+ sees on average when it fires.
+
