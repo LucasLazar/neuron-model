@@ -1,5 +1,9 @@
-# Tested with Python 3.9.6, numpy 2.0.2, scipy 1.13.1, matplotlib 3.9.4.
-# Also needs a C compiler on the path as `cc` (Xcode command line tools on macOS, gcc on Linux).
-numpy>=1.24
-scipy>=1.10
-matplotlib>=3.7
+# Exact versions behind every stored result in this repository (run on Python 3.9.6).
+# With these, the results reproduce bit for bit. Other versions agree statistically.
+# These pins have wheels for Python 3.9-3.12. On a newer Python, use instead:
+#   pip install -e ".[studies]"
+# Also needs a C compiler as `cc` (or set $CC): Xcode command-line tools on macOS,
+# gcc on Linux.
+numpy==2.0.2
+scipy==1.13.1
+matplotlib==3.9.4

@@ -1,0 +1,14 @@
+# conda env create -f environment.yml && conda activate neuron-model
+# The same pinned versions as requirements.txt, plus an editable install of the model.
+# The kernel also needs a C compiler as `cc` (or $CC): on macOS, `xcode-select --install`.
+name: neuron-model
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy=2.0.2
+  - scipy=1.13.1
+  - matplotlib=3.9.4
+  - pip
+  - pip:
+      - -e .

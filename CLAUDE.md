@@ -2,7 +2,16 @@
 
 This repository is the working copy of a computational neuron model: a dendritic LIF
 with an NMDA AND gate, buffered calcium and a Bayesian plasticity layer. It is a first
-variant of Scheler's neuron-centric model.
+variant of Scheler's neuron-centric model, and it fills all three of Scheler's layers:
+
+| Layer | Here |
+|---|---|
+| external | AMPA and NMDA |
+| internal | calcium handling: B_tot, τ_c, K_d |
+| **core** | **the Bayesian plasticity layer**: its learned belief about normal calcium, and the tail rule that writes gbar |
+
+Never describe the core as "not modelled". The project owner corrected that on
+10 Nov 2026.
 
 Read these in order:
 1. [README.md](README.md): layout, setup and ground rules.
@@ -15,12 +24,16 @@ Each study folder has a DESIGN.md (written before the runs) and a FINDINGS.md.
 ## Setup on a new machine
 
 ```bash
-python3 -m venv venv && venv/bin/pip install -r requirements.txt
+python3 -m venv venv && venv/bin/pip install -r requirements.txt && venv/bin/pip install -e .
 venv/bin/python -m unittest discover -s tests -v    # 50 tests
 ```
 
-- A C compiler is needed as `cc`. On macOS, install the Xcode command-line tools with
-  `xcode-select --install`.
+- requirements.txt pins the exact versions behind the stored results. They need Python
+  3.9-3.12. On a newer Python, use `pip install -e ".[studies]"`, or use conda with
+  `environment.yml`.
+- `pyproject.toml` packages only `neuron/`.
+- A C compiler is needed as `cc`, or `$CC` if that is set. On macOS, install the Xcode
+  command-line tools with `xcode-select --install`.
 - `neuron/_kernel.so` is not in git. The kernel compiles itself on first import, for
   whatever architecture the machine has.
 - The large sample arrays `physio/results/*.npz` and `branch/results/*.npz` are not in

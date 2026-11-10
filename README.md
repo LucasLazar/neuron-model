@@ -1,4 +1,4 @@
-# Neuron-centric model: handover package
+# Neuron-centric model
 
 A dendritic LIF neuron with:
 - a split NMDA gate: an AND of glutamate and depolarisation, with back-propagating APs;
@@ -6,8 +6,14 @@ A dendritic LIF neuron with:
 - a Bayesian plasticity layer, which learns each compartment's normal calcium and
   moves its AMPA conductance when calcium leaves that range.
 
-It is a first computational variant of Scheler's neuron-centric model, with calcium
-handling (buffer, extrusion) as the internal parameters under study.
+It is a first computational variant of Scheler's neuron-centric model. The model fills
+all three of its parameter layers:
+
+| Layer | Here |
+|---|---|
+| external | AMPA and NMDA |
+| internal | calcium handling: buffer, extrusion, affinity. These are the parameters under study. |
+| core | the Bayesian plasticity layer |
 
 This folder is self-contained. It holds:
 - the current model;
@@ -30,16 +36,39 @@ Earlier history lives in the research repository; [STATUS.md](STATUS.md) summari
 
 ## Setup
 
-You need Python 3.9 or later, numpy, scipy and matplotlib, plus a C compiler available as
-`cc` (Xcode command-line tools on macOS, gcc on Linux). The kernel compiles itself on
-first import.
+You need Python 3.9 or later and a C compiler: Xcode command-line tools on macOS, gcc on
+Linux. The compiler is called as `cc`, or as `$CC` if that is set. The kernel compiles
+itself on first import.
+
+There are three ways to set up. Pick one.
 
 ```bash
-python -m venv venv && venv/bin/pip install -r requirements.txt
+# 1. pip with the exact versions behind the stored results (Python 3.9-3.12)
+python3 -m venv venv && venv/bin/pip install -r requirements.txt && venv/bin/pip install -e .
+
+# 2. conda, with the same pins
+conda env create -f environment.yml && conda activate neuron-model
+
+# 3. pip on any newer Python, with unpinned versions
+python3 -m venv venv && venv/bin/pip install -e ".[studies]"
+```
+
+Then check the install:
+
+```bash
 venv/bin/python -m unittest discover -s tests -v      # 50 tests, about 1 minute
 ```
 
-All commands run from this folder.
+The files involved:
+
+| File | Holds |
+|---|---|
+| `pyproject.toml` | the package (`neuron`) and its minimum versions. The `studies` extra adds matplotlib for the study scripts and plots. |
+| `requirements.txt` | the pinned versions |
+| `environment.yml` | a conda version of the same |
+
+The editable install (`-e .`) makes `import neuron` work from anywhere. Without it, the
+scripts still run from this folder. All commands run from this folder.
 
 ## Layout
 
@@ -116,7 +145,7 @@ unchanged, so the difference in calcium is what bAPs add.
 \* Measured on a 2017 MacBook Pro (dual-core i5), 3 worker processes. \*\* 4 worker processes.
 
 Results are deterministic. Every run is seeded, and paired arms see identical input.
-With the library versions in requirements.txt, the stored results reproduce bit for bit.
+With the pinned versions in requirements.txt (or environment.yml), the stored results reproduce bit for bit.
 Other versions of numpy may change random streams, so results would then agree
 statistically but not exactly. The large `*_samples.npz` files are left out (see
 `.gitignore`); each script regenerates them, and the KDE plots need them.

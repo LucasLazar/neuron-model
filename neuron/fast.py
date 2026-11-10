@@ -29,7 +29,9 @@ def _load_kernel():
     if not library.exists() or library.stat().st_mtime < source.stat().st_mtime:
         # fp-contract off keeps results independent of fused multiply-add hardware.
         temporary = HERE / f'_kernel_{os.getpid()}.so'
-        subprocess.run(['cc', '-O2', '-ffp-contract=off', '-shared', '-fPIC', '-o', str(temporary), str(source), '-lm'], check=True)
+        compiler = os.environ.get('CC', 'cc')
+        subprocess.run([compiler, '-O2', '-ffp-contract=off', '-shared', '-fPIC', '-o', str(temporary), str(source), '-lm'],
+                       check=True)
         os.replace(temporary, library)
     return ctypes.CDLL(str(library))
 
