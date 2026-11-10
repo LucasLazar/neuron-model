@@ -1,9 +1,9 @@
-# Skeleton: fill in the authors and add version, date-released and doi when there is a release to cite.
+# Add version, date-released and doi when there is a release to cite.
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "neuron-model"
 authors:
-  - family-names: ""
-    given-names: ""
+  - family-names: "Lazar"
+    given-names: "Lucas"
 repository-code: "https://github.com/LucasLazar/neuron-model"
 license: MIT
