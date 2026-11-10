@@ -146,7 +146,7 @@ open-loop measurements; gbar was not fed back.
 6. **The per-synapse reading has no somatic firing.** `NMDANeuron.step(force_post=True)`
    exists in Python but not in the kernel.
 
-## Where the project owner wants to go next
+## Things I (Lucas) want to do next
 
 The stated aim, 8 November:
 
