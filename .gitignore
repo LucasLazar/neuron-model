@@ -6,3 +6,6 @@ branch/results/*.npz
 .DS_Store
 venv/
 likelihood/results/test_cells/
+*.egg-info/
+build/
+dist/
